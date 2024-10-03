@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Chami">
+    <meta name="description" content="Descarga MCBE Oficial">
+    <link rel="icon" href="https://cdn2.steamgriddb.com/icon_thumb/20ba096f2d3da322ed843f6a4bee9a91.png" type="image/png">
+    <title>Chai Realm</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+        html {
+            padding-top: 50px;
+            font-family: 'Open Sans', Helvetica, arial, sans-serif;
+            text-align: center;
+            background-color: #eeeeee;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: 0.5s ease-in-out;
+        }
+
+        h1,
+        h4 {
+            font-family: 'Raleway', 'Open Sans', sans-serif;
+            margin: 0;
+            line-height: 1;
+        }
+
+        a {
+            text-decoration: none;
+            line-height: 80px;
+            color: black;
+        }
+
+        .centerer {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .wrap {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        [class^="btn-"] {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            margin: 1rem auto;
+            text-transform: uppercase;
+            border: 1px solid currentColor;
+        }
+
+        .btn-0 {
+            color: #333333;
+        }
+
+        .btn-0:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #00ff00;
+            transform: translateX(-100%);
+        }
+
+        .btn-0:hover {
+            color: #aaaaaa;
+        }
+
+        .btn-0:hover:before {
+            transform: translateX(0);
+        }
+    </style>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+
+<body>
+    <div class="centerer">
+        <h1>¿Cuál es tu Dispositivo?</h1>
+        <h4>Para descargar Minecraft Bedrock Edition</h4>
+
+        <div class="wrap">
+            <a class="btn-0" id="pc" onclick="window.location.href='https://chamidev.github.io/MCBE/pc.zip'" aria-label="Descargar para PC">
+                <lord-icon src="https://cdn.lordicon.com/vvqcrgre.json" trigger="hover" colors="primary:#545454,secondary:#4bb3fd,tertiary:#545454" style="width:100px;height:100px">
+                </lord-icon>
+            </a>
+            <a class="btn-0" id="movil" onclick="window.location.href='https://mcpedl.org/downloading/#:~:text=Fast%20Download%20MCPE%20APK'" aria-label="Descargar para Android">
+                <lord-icon src="https://cdn.lordicon.com/gemrrbjz.json" trigger="hover" colors="primary:#ffffff,secondary:#545454" style="width:100px;height:100px">
+                </lord-icon>
+            </a>
+        </div>
+    </div>
+
+    <h4>Creado por <a href="https://linktr.ee/Ch4m1" target="_blank" rel="noopener">Chami
+        <lord-icon src="https://cdn.lordicon.com/aiwnxrcc.json" trigger="in" delay="2000" state="in-reveal" colors="primary:#2ca58d,secondary:#ffffff" style="width:25px;height:25px"></lord-icon>
+    </a></h4>
+
+    <h4>Icons by <a href="https://lordicon.com/" target="_blank" rel="noopener">Lordicon.com</a></h4>
+
+</body>
+
+</html>
