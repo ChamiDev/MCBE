@@ -3,114 +3,159 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=none">
+    <meta name="viewport" content="width=device-width, user-scalable=none">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Chami">
     <meta name="description" content="Descarga MCBE Oficial">
-    <link rel="icon" href="https://cdn2.steamgriddb.com/icon_thumb/20ba096f2d3da322ed843f6a4bee9a91.png" type="image/png">
+    <link rel="icon" href="https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico" type="image/png">
     <title>Chai Realm</title>
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
-        html {
-            padding-top: 50px;
-            font-family: 'Open Sans', Helvetica, arial, sans-serif;
-            text-align: center;
-            background-color: #eeeeee;
-        }
-
-        * {
-            box-sizing: border-box;
-            transition: 0.5s ease-in-out;
-        }
-
-        h1,
-        h4 {
-            font-family: 'Raleway', 'Open Sans', sans-serif;
+        body {
             margin: 0;
-            line-height: 1;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #04253a, #0b3a56);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
         }
 
-        a {
-            text-decoration: none;
-            line-height: 80px;
-            color: black;
+        .container {
+            width: 250px;
+            height: 250px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
-        .centerer {
+        .game-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .game-header img {
             width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 0 1rem;
+            border-radius: 10px;
         }
 
-        @media (min-width: 600px) {
-            .wrap {
-                width: 50%;
-                float: left;
-            }
+        .game-header h1 {
+            margin: 0;
+            font-size: 2rem;
+            text-align: center;
         }
 
-        [class^="btn-"] {
+        .details {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .button {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 255, 0, 0.4);
+            transform: scale(1.2);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #444;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .cabeza {
             position: relative;
-            display: block;
-            overflow: hidden;
-            width: 100px;
-            height: 100px;
-            margin: 1rem auto;
-            text-transform: uppercase;
-            border: 1px solid currentColor;
+            top: -31px;
         }
 
-        .btn-0 {
-            color: #333333;
-        }
-
-        .btn-0:before {
-            content: '';
-            position: absolute;
+        .fondo {
+            background-image: url('https://www.minecraft.net/content/dam/games/minecraft/key-art/MC-Vanilla_Media-Block-Image_PC-Bundle-Keyart_800x450.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #00ff00;
-            transform: translateX(-100%);
+            z-index: -1;
         }
 
-        .btn-0:hover {
-            color: #aaaaaa;
+        .back {
+            position: absolute;
+            top: 0px;
+            left: -100%;
+            background-color: gray;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            animation: slideIn 1s forwards;
         }
 
-        .btn-0:hover:before {
-            transform: translateX(0);
+        @keyframes slideIn {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
         }
     </style>
-
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </head>
 
 <body>
-    <div class="centerer">
-        <h1>¿Cuál es tu Dispositivo?</h1>
-        <h4>Para descargar Minecraft Bedrock Edition</h4>
-
-        <div class="wrap">
-            <a class="btn-0" id="pc" onclick="window.location.href='https://chamidev.github.io/MCBE/pc.zip'" aria-label="Descargar para PC">
-                <lord-icon src="https://cdn.lordicon.com/vvqcrgre.json" trigger="hover" colors="primary:#545454,secondary:#4bb3fd,tertiary:#545454" style="width:100px;height:100px">
-                </lord-icon>
-            </a>
-            <a class="btn-0" id="movil" onclick="window.location.href='https://mcpedl.org/downloading/#:~:text=Fast%20Download%20MCPE%20APK'" aria-label="Descargar para Android">
-                <lord-icon src="https://cdn.lordicon.com/gemrrbjz.json" trigger="hover" colors="primary:#ffffff,secondary:#545454" style="width:100px;height:100px">
-                </lord-icon>
-            </a>
+    <div class="fondo"></div>
+    <a href="https://chamidev.github.io/" class="back">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/tfwhvbiq.json" trigger="in" delay="100" state="in-reveal" colors="primary:#e4e4e4,secondary:#121331" style="width:50px;height:50px">
+        </lord-icon>
+    </a>
+    <div class="container">
+        <div class="game-header">
+            <img class="cabeza" src="https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Play_With_Friends_Online_672x360.png" alt="Minecraft">
+            <h1>Minecraft Bedrock</h1>
+            <p class="details">Mojang Studios</p>
+            <br>
+        </div>
+        <div class="buttons">
+            <button class="button" onclick="window.location.href = window.location.href + 'windows/';">
+                <img class="logo" id="windows" src="https://img.icons8.com/?size=100&id=OlmjyQ9zkRzF&format=png&color=000000">
+            </button>
+            <button class="button" onclick="window.location.href = window.location.href + 'android/';">
+                <img class="logo" id="android" src="https://pngimg.com/uploads/android_logo/android_logo_PNG26.png">
+            </button>
         </div>
     </div>
-
-    <h4>Creado por <a href="https://linktr.ee/Ch4m1" target="_blank" rel="noopener">Chami
-        <lord-icon src="https://cdn.lordicon.com/aiwnxrcc.json" trigger="in" delay="2000" state="in-reveal" colors="primary:#2ca58d,secondary:#ffffff" style="width:25px;height:25px"></lord-icon>
-    </a></h4>
-
-    <h4>Icons by <a href="https://lordicon.com/" target="_blank" rel="noopener">Lordicon.com</a></h4>
-
 </body>
 
 </html>
