@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Chami">
+    <meta name="description" content="Descarga MCBE Oficial">
+    <link rel="icon" href="https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico" type="image/png">
+    <title>Chai Realm</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #04253a, #0b3a56);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .fondo {
+            background-image: url('https://www.minecraft.net/content/dam/games/minecraft/key-art/MC-Vanilla_Media-Block-Image_PC-Bundle-Keyart_800x450.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .back {
+            position: absolute;
+            top: 0px;
+            left: -100%;
+            background-color: gray;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            animation: slideIn 1s forwards;
+            z-index: 999;
+        }
+
+        @keyframes slideIn {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        video {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+        .button {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 255, 0, 0.1);
+        }
+
+        .creditos {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo"></div>
+    <div class="fondo"></div>
+    <a href="https://chamidev.github.io/MCBE/" class="back">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/tfwhvbiq.json" trigger="in" delay="100" state="in-reveal" colors="primary:#e4e4e4,secondary:#121331" style="width:50px;height:50px">
+        </lord-icon>
+    </a>
+    <div class="container">
+        <iframe class="video" src="https://drive.google.com/file/d/1XcIaxT6iHqtYwvqznH0e5mzT8cf_JNCv/preview" allow="autoplay"></iframe>
+        <div class="button-container">
+            <button onclick="window.location.href='https://drive.google.com/uc?id=1EdXHB2bLOAmC1I4be0Vb5gVI2Iamlh9o&export=download'" class="button">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/hnqamtrw.json" trigger="in" delay="100" state="in-reveal" colors="primary:#ebe6ef,secondary:#000000" style="width:112px;height:100px"></lord-icon>
+</button>
+
+            <button onclick="window.location.href='ms-windows-store://pdp/?productid=9NBLGGH2JHXJ'" class="button">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon src="https://cdn.lordicon.com/eiekfffz.json" trigger="in" delay="100" state="in-reveal" style="width:112px;height:100px"></lord-icon>
+</button>
+
+        </div>
+    </div>
+    <div class="creditos">
+        Video grabado por <a href="https://www.youtube.com/@GonzzaCanalOficial" style="color: #e4e4e4;">Gonza</a>
+    </div>
+</body>
+
+</html>
