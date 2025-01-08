@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Chami">
+    <meta name="description" content="Descarga MCBE Oficial">
+    <link rel="icon" href="https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico" type="image/png">
+    <title>Chai Realm</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #04253a, #0b3a56);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
+        }
+
+        .container {
+            position: relative;
+            width: 90%;
+            top: 150px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .fondo {
+            background-image: url('https://www.minecraft.net/content/dam/games/minecraft/key-art/MC-Vanilla_Media-Block-Image_PC-Bundle-Keyart_800x450.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .back {
+            position: absolute;
+            top: 0px;
+            left: -100%;
+            background-color: gray;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            animation: slideIn 1s forwards;
+            z-index: 999;
+        }
+
+        @keyframes slideIn {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        video {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+        .button {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 255, 0, 0.1);
+        }
+
+        .creditos {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .explicacion {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .explicacion img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo"></div>
+    <a href="https://chamidev.github.io/MCBE/" class="back">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/tfwhvbiq.json" trigger="in" delay="100" state="in-reveal" colors="primary:#e4e4e4,secondary:#121331" style="width:50px;height:50px">
+        </lord-icon>
+    </a>
+    <div class="container">
+        <div class="button-container">
+            <button onclick="window.location.href='https://mcpedl.org/downloading/#:~:text=Fast-,Download,-MCPE%20APK'" class="button">
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/hnqamtrw.json" trigger="in" delay="100" state="in-reveal" colors="primary:#ebe6ef,secondary:#000000" style="width:112px;height:100px"></lord-icon>
+            </button>
+        </div>
+        <div class="explicacion">
+            <p>Para descargar Minecraft para celulares, deben pulsar el botón
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/hnqamtrw.json" trigger="in" delay="100" state="in-reveal" colors="primary:#ebe6ef,secondary:#000000" style="width:19px;height:19px"></lord-icon>. Al hacerlo, serán redirigidos a una página de descarga. Una vez en la página, deben desplazarse hacia abajo hasta encontrar una sección que contenga los archivos de la versión más reciente. Busquen la versión que contenga
+                el mensaje <strong>"Release"</strong> o <strong>"Lanzamiento"</strong>. El archivo con estos datos debe ser el que esté encima de todos. Asegúrense de elegir la versión correcta para tener la última actualización disponible.</p>
+            <img src="https://um2025.renderforest.com/u25148551/visuals/e30a5852-81a2-4aa9-a690-793cfe72414a.jpg" alt=""><br> o
+            <br>
+            <img src="https://um2025.renderforest.com/u25148551/visuals/14aede1b-cc5c-4a35-beae-1249055191ed.jpg" alt="">
+            <p>Y luego pulsa <strong>DOWNLOAD</strong> o <strong>DESCARGAR</strong></p>
+            <p>Recuerden repetir este proceso cada vez que quieran actualizar a una nueva versión de Minecraft.</p>
+        </div>
+    </div>
+</body>
+
+</html>
