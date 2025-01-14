@@ -112,6 +112,30 @@
             height: auto;
             margin-top: 10px;
         }
+
+        .creditos {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            z-index: 1000;
+        }
+
+        .youtubers {
+            width: 30px;
+            border-radius: 100%;
+            position: relative;
+            transition: transform 0.3s ease, width 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .youtubers:hover {
+            width: 40px;
+            transform: rotate(10deg);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        }
     </style>
 </head>
 
@@ -122,6 +146,10 @@
         <lord-icon src="https://cdn.lordicon.com/tfwhvbiq.json" trigger="in" delay="100" state="in-reveal" colors="primary:#e4e4e4,secondary:#121331" style="width:50px;height:50px">
         </lord-icon>
     </a>
+    <div class="creditos">
+        Agradecimientos especiales<br>
+        <a href="https://www.youtube.com/@planet-minecraft" style="color: gray;"><img class="youtubers" src="https://yt3.googleusercontent.com/bRSJ6NoCX5QhzcWRTOjlEHrUH2WW65t9mhfCgP-N9pq1UOvwteY6H7KzVmuy0erMgixEeoL6=s160-c-k-c0x00ffffff-no-rj"></a>
+    </div>
     <div class="container">
         <div class="button-container">
             <button onclick="window.location.href='https://mcpedl.org/downloading/#:~:text=Fast-,Download,-MCPE%20APK'" class="button">
@@ -140,7 +168,7 @@
             <p>Y luego pulsa <strong>DOWNLOAD</strong> o <strong>DESCARGAR</strong></p>
             <p style="color:gray">Nota: <br>Si tienes un apk de minecraft instalado, debes desinstalarlo antes de descargar este nuevo apk<br>Recuerden repetir este proceso cada vez que quieran actualizar a una nueva versión de Minecraft.</p>
             <p style="color: yellow">ADVERTENCIA: <br>Si te da la opcion de <strong>Guardar datos de la aplicacion</strong>, debes pulsar que no, de lo contrario, no podras descargar ninguna version de minecraft sin importar cual sea ni de donde provenga</p>
-            <p>SOLUCION: <br> Debes volver a instalar <strong>El mismo APK </strong>que acabas de desinstalar, asegurate de que sea el mismo archivo, de lo contrario no se puede proceder.<br> Luego de instalarlo, debes Desinstalarlo nuevamente pero <strong> Sin Guardar datos</strong>.<br> Luego podras instalar cualquier apk del juego sin problemas</p>
+            <p>SOLUCION: <br> Debes volver a instalar <strong>El mismo APK </strong>que acabas de desinstalar, asegurate de que sea el mismo archivo, de lo contrario no se puede proceder.<br> Luego de instalarlo, debes Desinstalarlo nuevamente pero <strong> Sin Guardar datos</strong>.<br>                Luego podras instalar cualquier apk del juego sin problemas</p>
         </div>
     </div>
 </body>
