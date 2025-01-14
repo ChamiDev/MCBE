@@ -88,13 +88,27 @@
         }
 
         .creditos {
-            position: absolute;
+            position: fixed;
             bottom: 10px;
             left: 10px;
             background: rgba(0, 0, 0, 0.5);
             padding: 10px;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 18px;
+            z-index: 1000;
+        }
+
+        .youtubers {
+            width: 30px;
+            border-radius: 100%;
+            position: relative;
+            transition: transform 0.3s ease, width 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .youtubers:hover {
+            width: 40px;
+            transform: rotate(10deg);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
         }
     </style>
 </head>
@@ -123,7 +137,8 @@
         </div>
     </div>
     <div class="creditos">
-        Video grabado por <a href="https://www.youtube.com/@GonzzaCanalOficial" style="color: #e4e4e4;">Gonza</a>
+        Agradecimientos especiales<br>
+        <a href="https://www.youtube.com/@GonzzaCanalOficial" style="color: gray;"><img class="youtubers" src="https://yt3.googleusercontent.com/zls_thij0O5F6epDkpKhb6v76ZIz2E9QZ9zvi15jyFC8ssxquvt58pfqY2N_1k0tjavflT-y7g=s160-c-k-c0x00ffffff-no-rj"></a>
     </div>
 </body>
 
