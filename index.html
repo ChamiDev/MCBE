@@ -23,6 +23,8 @@
         }
 
         .container {
+            position: absolute;
+            top: 20%;
             width: 250px;
             height: 250px;
             background: rgba(0, 0, 0, 0.5);
@@ -79,9 +81,24 @@
             background-color: rgba(0, 255, 0, 0.4);
             transform: scale(1.2);
         }
+        .buttonspecial {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .buttonspecial:hover {
+            background-color: rgba(0, 255, 0, 0.4);
+            transform: scale(1.2);
+        }
 
         .logo {
-            width: 50px;
             height: 50px;
         }
 
@@ -153,6 +170,12 @@
             </button>
             <button class="button" onclick="window.location.href = window.location.href + 'android/';">
                 <img class="logo" id="android" src="https://pngimg.com/uploads/android_logo/android_logo_PNG26.png">
+            </button>
+            </div>
+            <br>
+        <div class="buttons">
+            <button class="buttonspecial" onclick="window.location.href = opti.location.href + 'opti/';">
+                <img class="logo" id="opti" src="https://eu-um2025.renderforest.com/u25148551/visuals/3cb5a0af-e035-49c8-bfe2-0ff83228dc5d.png">
             </button>
         </div>
     </div>
