@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=none" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Chami" />
+    <meta name="description" content="Descarga MCBE Oficial" />
+    <link rel="icon" href="https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico" type="image/png" />
+    <title>Descargar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #04253a, #0b3a56);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
+        }
+
+        .container {
+            position: absolute;
+            top: 20%;
+            width: 300px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .container img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            backdrop-filter: blur(5px);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgba(100, 0, 100, 0.4);
+        }
+
+        .fondo {
+            background-image: url('https://www.minecraft.net/content/dam/games/minecraft/key-art/MC-Vanilla_Media-Block-Image_PC-Bundle-Keyart_800x450.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .back {
+            position: absolute;
+            top: 0px;
+            left: -100%;
+            background-color: gray;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            animation: slideIn 1s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0;
+            }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .modal-content {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            animation: slideUp 0.3s ease-out;
+            box-shadow: 0 0 10px #000;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .modal-content h2 {
+            margin: 10px 0 0 0;
+            color: #fff;
+        }
+
+        .modal-content button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo"></div>
+
+    <a href="https://chamidev.github.io/MCHUB/" class="back">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon src="https://cdn.lordicon.com/tfwhvbiq.json" trigger="in" state="in-reveal" colors="primary:#e4e4e4,secondary:#121331" style="width:50px;height:50px"></lord-icon>
+    </a>
+
+    <div class="container">
+        <img src="https://eu-um2025.renderforest.com/u25148551/visuals/f94e0bd2-60d6-48b2-aaf2-5d90d43e1952.png" alt="Título" />
+        <button class="btn" onclick="mostrarModal()">Descargar para Android</button>
+        <button class="btn" onclick="mostrarModal()">Descargar para Windows</button>
+    </div>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content" id="modalContent">
+            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/yfxqzclt.json"
+                trigger="in"
+                state="in-error"
+                colors="primary:#ff0000"
+                style="width:50px;height:50px"
+                id="modalIcon">
+            </lord-icon>
+            <h2 id="modalTitle">No tenés permisos para descargar esta versión.</h2>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+
+        function mostrarModal() {
+            modal.style.display = 'flex';
+
+            if (navigator.vibrate) {
+                navigator.vibrate([100, 50, 100]);
+            }
+        }
+
+        function cerrarModal() {
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
